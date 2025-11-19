@@ -59,9 +59,6 @@ Based on the research paper **“Autism Spectrum Disorder Prediction Using Machi
 * Some models lack interpretability, making them unsuitable for medical settings.
 * Genetic dataset–based models are expensive and inaccessible.
 
-### **Citations (IEEE Format)**
-
-*(To be included fully in the References section.)*
 
 ---
 
@@ -158,9 +155,9 @@ Based on the research paper **“Autism Spectrum Disorder Prediction Using Machi
 
 ### **Results Obtained**
 
-* Without feature selection: Accuracy = **94% – 95%**
-* With kNN feature selection (as per research paper): Accuracy = **98%**
-* With Bagged Tree selected features: Test accuracy = **97%**
+* Random Forest: Accuracy = **82%**
+* Decision Tree: Accuracy = **83%**
+* XGBoost= **84%**
 
 ### **Performance Metrics**
 
