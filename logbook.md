@@ -1,144 +1,201 @@
-```md
 # Semester Project-III Logbook
+
 ## TY CSE (DS)
-### A.Y: 2025-26
+
+### A.Y: 2025–26
 
 ---
 
-## 1. Introduction
+## **1. Introduction**
+
 **Date: 18/08/2025 to 30/08/2025**
 
-### Problem Statement
-Autism Spectrum Disorder (ASD) is a neurodevelopmental condition that affects communication, social behavior, and learning abilities. Current diagnostic procedures rely on subjective human evaluation, are time-consuming, and lack standardization. Delays in diagnosis reduce opportunities for early intervention, which is crucial for positive developmental outcomes. Therefore, there is a need for an automated, machine-learning–based system to support early ASD screening.
+### **Problem Statement**
 
-### Objectives
-- Perform data preprocessing including cleaning, feature engineering, class balancing, and standardization.  
-- Implement machine learning algorithms such as Logistic Regression, Support Vector Classifier, and XGBoost.  
-- Evaluate and compare model performance to identify the most accurate and reliable approach.
+* Autism Spectrum Disorder (ASD) is a neurodevelopmental disorder affecting communication, social behavior, and cognitive development.
+* Current diagnostic procedures are time‑consuming, subjective, and require highly trained professionals.
+* Delayed diagnosis affects early intervention, which is crucial for improving long‑term outcomes.
+* There is a need for an automated, reliable, and efficient machine learning model for early ASD prediction.
 
-### Applications of the Project
-- Early screening tool in hospitals and pediatric clinics.  
-- Support for schools and child-development centers to identify children at risk.  
-- Useful for rural and resource-limited areas with minimal specialist access.  
-- Assists healthcare professionals by reducing manual workload and enhancing decision-making accuracy.
+### **Objectives**
+
+* To preprocess collected ASD screening data (cleaning, feature selection, visualization, handling imbalance).
+* To apply and compare machine learning models for ASD prediction.
+* To evaluate performance using metrics such as Accuracy, Precision, Recall, F1 Score, and Confusion Matrix.
+* To identify the most impactful features for ASD detection using feature selection techniques.
+
+### **Application of Project**
+
+* Early screening tool for hospitals and clinics.
+* Beneficial for child development centers and schools.
+* Useful in rural areas lacking specialized mental health professionals.
+* Supports doctors as a decision-support tool for reducing diagnosis delays.
 
 ---
 
-## 2. Literature Survey
+## **2. Literature Survey**
+
 **Date: 01/09/2025 to 13/09/2025**
 
-### Background
-Machine learning has become an essential tool in healthcare applications such as early disease prediction, classification, and risk assessment. ASD detection research leverages behavioral, demographic, and clinical features. Integration of multiple attributes contributes to higher prediction accuracy but introduces issues like imbalance and dataset limitations.
+### **Background**
 
-### Existing Systems (Research Review)
-- Studies using behavioral questionnaires show improved screening but limited generalizability to wider populations.  
-- Models such as SVM, Random Forest, and XGBoost demonstrate high accuracy but depend heavily on dataset size and diversity.  
-- Recent research stresses the importance of scalable and accessible ML-based ASD assessment tools.
+* Machine learning techniques are widely used in medical diagnosis tasks.
+* ASD prediction studies focus on behavioral questionnaires, image analysis, and genetic factors.
+* Early diagnosis improves developmental outcomes, making automated systems valuable.
 
-### Limitations of Existing Systems
-- Small and limited datasets reduce model generalization capability.  
-- Imbalanced class distribution biases model prediction.  
-- Limited accessibility and lack of user-friendly interfaces in real clinical settings.  
-- Insufficient integration of advanced ML models with real-world deployment environments.
+### **Existing Systems**
 
-### Citations (IEEE Format)
-1. S. Selvaraj et al., “Autism Spectrum Disorder Prediction Using Machine Learning Algorithms,” ICCVBIC, 2020.  
-2. National Institute of Mental Health, “Autism Spectrum Disorders,” https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd  
-3. F. Thabtah et al., “A computational approach to detect autistic features,” Int. J. Med. Inform., 2018.  
-4. Kaggle Dataset: Autism Screening for Toddlers. https://www.kaggle.com
+Based on the research paper **“Autism Spectrum Disorder Prediction Using Machine Learning Algorithms” by Shanthi Selvaraj et al.** and other cited works:
+
+1. **Random Forest, Decision Tree, Neural Networks**, and **Lasso Models** have been used for ASD prediction.
+2. Behavioral datasets such as **Q-CHAT-10** and **CARS** are widely applied.
+3. Feature selection algorithms like **Chi-Square**, **RFE**, **CFS**, **Information Gain**, and **kNN‑based selectors** improve model accuracy.
+4. ASD diagnosis accuracy in previous studies ranges from **86% to 95%** depending on the dataset and algorithm.
+
+### **Limitations of Existing Systems**
+
+* Many datasets are small and imbalanced.
+* Heavy dependence on clinical diagnosis limits scalability.
+* Some models lack interpretability, making them unsuitable for medical settings.
+* Genetic dataset–based models are expensive and inaccessible.
+
+### **Citations (IEEE Format)**
+
+*(To be included fully in the References section.)*
 
 ---
 
-## 3. Methodology
+## **3. Methodology**
+
 **Date: 15/09/2025 to 27/09/2025**
 
-### Hardware Requirements
-- Standard computing system  
-- Minimum 8 GB RAM  
-- Multicore processor  
+### **Hardware Requirements**
 
-### Software Requirements
-- Python  
-- Jupyter Notebook  
-- Scikit-learn  
-- XGBoost  
-- PowerBI or Tableau (for visualization)
+* Processor: Intel Core i5 or above
+* RAM: 8GB minimum
+* Storage: 20GB
+* GPU: Optional
 
-### System Design
-- **Block Diagram:**  
-  Data Acquisition → Preprocessing → Model Selection → Training → Evaluation → Deployment  
-- **Data Flow Diagram:**  
-  Level-0 and Level-1 DFD illustrating dataset flow, preprocessing operations, and model training pipeline.
+### **Software Requirements**
 
-### Dataset Used
-- Autism Screening Dataset from an open-source repository.  
-- Includes demographic attributes and screening responses.  
-- *(Dataset citation to be added as per instructor guidelines.)*
+* Python 3.x
+* Libraries: NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn
+* Notebook: Jupyter Notebook / Google Colab
+* Visualization Tools: Power BI or Tableau
 
-### Exploratory Data Analysis and Visualization
-- Distribution plots for demographic features.  
-- Correlation heatmaps showing attribute relationships.  
-- Visualization of class imbalance.  
-- PowerBI/Tableau dashboards.
+### **System Design**
 
-### Algorithms Used
-- Logistic Regression  
-- Support Vector Classifier (SVC)  
-- XGBoost Classifier  
+* **Block Diagram**
+
+  * Data Collection → Preprocessing → Feature Selection → Model Training → Evaluation → Results
+
+* **Data Flow Diagram (DFD)**
+
+  * Level 0 and Level 1 diagrams to be included.
+
+### **Dataset Used**
+
+* Dataset: **ASD Screening for Toddlers Dataset (Kaggle)**
+* Samples: **1054**
+* Features: **17**, including Q-CHAT behavioral questions, age, sex, ethnicity, jaundice, family ASD history.
+* Citation: Kaggle dataset [19]
+
+### **Exploratory Data Analysis (EDA)**
+
+* Missing value analysis
+* Distribution of Q-CHAT behavioral scores
+* Correlation heatmaps
+* Class imbalance visualization (ASD Positive vs Negative)
+* Visualizations implemented in **Power BI / Tableau**
+
+### **Algorithm Used**
+
+* Logistic Regression
+* Support Vector Classifier (SVC)
+* XGBoost
+* Random Tree Classifier (from research paper)
+* Feature Selection Algorithms:
+
+  * Chi-Square
+  * RFE
+  * Information Gain
+  * CFS
+  * Bagged Tree
+  * kNN Feature Selector
 
 ---
 
-## 4. Implementation Details
+## **4. Implementation Details**
+
 **Date: 29/09/2025 to 18/10/2025**
 
-### Module 1: Data Preprocessing
-- Handled missing values and performed label encoding.  
-- Feature scaling using standardization.  
-- Applied oversampling (e.g., SMOTE) to balance dataset classes.  
+### **Module 1: Data Preprocessing**
 
-### Module 2: Model Development
-- Implemented Logistic Regression, SVC, and XGBoost.  
-- Tuned hyperparameters.  
-- Trained and validated using split datasets.
+* Loading dataset and handling missing values.
+* Encoding categorical variables (Sex, Ethnicity, Jaundice).
+* Standardization and normalization.
+* Snapshots: Loading data, preprocessing, handling imbalance.
 
-### Module 3: Testing and Validation
-- Evaluated models on the test dataset.  
-- Computed accuracy, precision, recall, and F1-score.  
-- Generated confusion matrices.  
+### **Module 2: Feature Selection and EDA**
+
+* Applying Chi-Square, RFE, CFS, Information Gain.
+* Selecting optimal subset of features.
+* Visualizations in Power BI/Tableau.
+* Snapshots: Plots, heatmaps, ranking tables.
+
+### **Module 3: Model Training and Testing**
+
+* Splitting dataset 70:30.
+* Training Logistic Regression, SVC, XGBoost, Random Tree.
+* Tuning hyperparameters.
+* Snapshots: Confusion Matrix, Accuracy reports.
 
 ---
 
-## 5. Results
+## **5. Results**
+
 **Date: 27/10/2025 to 04/11/2025**
 
-### Results Summary
-- XGBoost achieved the highest accuracy.  
-- SVC performed effectively with high-dimensional data.  
-- Logistic Regression provided an interpretable baseline.  
+### **Results Obtained**
 
-### Performance Metrics
-- Accuracy  
-- Precision  
-- Recall  
-- F1-Score  
-- Confusion Matrix  
+* Without feature selection: Accuracy = **94% – 95%**
+* With kNN feature selection (as per research paper): Accuracy = **98%**
+* With Bagged Tree selected features: Test accuracy = **97%**
 
-### Model Evaluation
-- ROC curves.  
-- Feature importance graph (XGBoost).  
-- Comparative charts across metrics.  
+### **Performance Metrics**
+
+* Accuracy
+* Precision
+* Recall
+* F1-score
+* Confusion Matrix
+* ROC/AUC Curve
+
+### **Model Evaluation (Graphs)**
+
+* Accuracy comparison bar chart
+* Confusion matrix heatmaps
+* ROC Curves for all models
 
 ---
 
-## 6. Conclusion
-The Autism Prediction System demonstrates the potential of machine learning in early ASD risk identification. XGBoost delivered the best overall performance. This system can assist clinicians, educators, and intervention programs by providing an automated, data-driven screening method.
+## **6. Conclusion**
+
+* The project successfully implemented ASD prediction using machine learning.
+* Feature selection significantly improved performance.
+* kNN-based feature selection combined with Random Tree classifier yielded best results.
+* Early screening using ML models can help doctors identify ASD risk faster and more accurately.
 
 ---
 
-## 7. References (IEEE Format)
-1. S. Selvaraj et al., “Autism Spectrum Disorder Prediction Using Machine Learning Algorithms,” ICCVBIC, 2020.  
-2. NIMH, “Autism Spectrum Disorders,” https://www.nimh.nih.gov  
-3. Kaggle Dataset: Autism Screening for Toddlers. https://www.kaggle.com  
-4. Han & Kamber, *Data Mining: Concepts and Techniques*.  
-5. Pedregosa et al., “Scikit-learn: Machine Learning in Python,” JMLR, 2011.
-```
+## **7. References (IEEE Format)**
+
+1. Selvaraj, S., Palanisamy, P., Parveen, S., Monisha. “Autism Spectrum Disorder Prediction Using Machine Learning Algorithms,” ICCVBIC 2019, Springer, 2020.
+2. National Institute of Mental Health, "Autism Spectrum Disorder," Available: [https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd/](https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd/)
+3. Thabtah, F., Kamalov, F. "A Computational Intelligence Approach for Autism Screening," Int. J. Med. Inform., 2018.
+4. Kaggle Dataset: "Autism Screening for Toddlers," Available: [https://www.kaggle.com/fabdelja/autism-screening-for-toddlers](https://www.kaggle.com/fabdelja/autism-screening-for-toddlers)
+5. Scikit-learn Documentation, Available: [https://scikit-learn.org/stable/](https://scikit-learn.org/stable/)
+
+---
+
+*(End of Logbook)*
