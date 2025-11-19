@@ -1,3 +1,4 @@
+```md
 # Semester Project-III Logbook
 ## TY CSE (DS)
 ### A.Y: 2025-26
@@ -40,6 +41,12 @@ Machine learning has become an essential tool in healthcare applications such as
 - Limited accessibility and lack of user-friendly interfaces in real clinical settings.  
 - Insufficient integration of advanced ML models with real-world deployment environments.
 
+### Citations (IEEE Format)
+1. S. Selvaraj et al., “Autism Spectrum Disorder Prediction Using Machine Learning Algorithms,” ICCVBIC, 2020.  
+2. National Institute of Mental Health, “Autism Spectrum Disorders,” https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd  
+3. F. Thabtah et al., “A computational approach to detect autistic features,” Int. J. Med. Inform., 2018.  
+4. Kaggle Dataset: Autism Screening for Toddlers. https://www.kaggle.com
+
 ---
 
 ## 3. Methodology
@@ -65,14 +72,14 @@ Machine learning has become an essential tool in healthcare applications such as
 
 ### Dataset Used
 - Autism Screening Dataset from an open-source repository.  
-- Dataset includes demographic attributes, behavioral metrics, and ASD screening responses.  
+- Includes demographic attributes and screening responses.  
 - *(Dataset citation to be added as per instructor guidelines.)*
 
 ### Exploratory Data Analysis and Visualization
 - Distribution plots for demographic features.  
-- Correlation heatmaps showing relationships between attributes.  
+- Correlation heatmaps showing attribute relationships.  
 - Visualization of class imbalance.  
-- PowerBI/Tableau dashboards for feature-level insights.
+- PowerBI/Tableau dashboards.
 
 ### Algorithms Used
 - Logistic Regression  
@@ -86,18 +93,18 @@ Machine learning has become an essential tool in healthcare applications such as
 
 ### Module 1: Data Preprocessing
 - Handled missing values and performed label encoding.  
-- Performed feature scaling using standardization.  
+- Feature scaling using standardization.  
 - Applied oversampling (e.g., SMOTE) to balance dataset classes.  
 
 ### Module 2: Model Development
-- Implemented Logistic Regression, SVC, and XGBoost models.  
-- Tuned hyperparameters for optimal performance.  
-- Trained and validated models on split datasets.
+- Implemented Logistic Regression, SVC, and XGBoost.  
+- Tuned hyperparameters.  
+- Trained and validated using split datasets.
 
 ### Module 3: Testing and Validation
-- Evaluated the models on the test dataset.  
+- Evaluated models on the test dataset.  
 - Computed accuracy, precision, recall, and F1-score.  
-- Generated confusion matrices for each algorithm.  
+- Generated confusion matrices.  
 
 ---
 
@@ -105,9 +112,9 @@ Machine learning has become an essential tool in healthcare applications such as
 **Date: 27/10/2025 to 04/11/2025**
 
 ### Results Summary
-- XGBoost achieved the highest accuracy among all tested models.  
-- SVC performed effectively, particularly in handling high-dimensional features.  
-- Logistic Regression served as an interpretable baseline model.
+- XGBoost achieved the highest accuracy.  
+- SVC performed effectively with high-dimensional data.  
+- Logistic Regression provided an interpretable baseline.  
 
 ### Performance Metrics
 - Accuracy  
@@ -117,18 +124,21 @@ Machine learning has become an essential tool in healthcare applications such as
 - Confusion Matrix  
 
 ### Model Evaluation
-- ROC curves for all algorithms.  
-- Feature importance graph for XGBoost.  
-- Comparative charts summarizing model performance across metrics.
+- ROC curves.  
+- Feature importance graph (XGBoost).  
+- Comparative charts across metrics.  
 
 ---
 
 ## 6. Conclusion
-The Autism Prediction System successfully demonstrates the potential of machine learning in early screening and risk identification for ASD. Among the evaluated models, XGBoost delivered superior performance. This system has strong potential to assist clinicians, educators, and early-intervention programs by providing an accessible, automated, and data-driven screening method.
+The Autism Prediction System demonstrates the potential of machine learning in early ASD risk identification. XGBoost delivered the best overall performance. This system can assist clinicians, educators, and intervention programs by providing an automated, data-driven screening method.
 
 ---
 
 ## 7. References (IEEE Format)
-1. Authors, “Title of Paper,” *Journal Name*, vol., no., year.  
-2. Dataset Source, “Autism Screening Dataset,” year.  
-3. Additional research papers (3–5 citations as per project requirement).
+1. S. Selvaraj et al., “Autism Spectrum Disorder Prediction Using Machine Learning Algorithms,” ICCVBIC, 2020.  
+2. NIMH, “Autism Spectrum Disorders,” https://www.nimh.nih.gov  
+3. Kaggle Dataset: Autism Screening for Toddlers. https://www.kaggle.com  
+4. Han & Kamber, *Data Mining: Concepts and Techniques*.  
+5. Pedregosa et al., “Scikit-learn: Machine Learning in Python,” JMLR, 2011.
+```
